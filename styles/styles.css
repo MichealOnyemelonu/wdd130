@@ -7,19 +7,52 @@ nav a {
     color: white;
     display: block;
     padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
     color: darkblue;
 }
 
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 img {
     width: 150px;
     height: auto;
     border: 1px solid black;
+    padding: 10px;
     box-shadow: 0 0 30px gray;
+    display: block;
+    margin: 12px;
+}
+
+aside {
+    width: 3000px;
+    margin: 20px;
+    border: 1px solid #acc;
+    padding: 16px;
+    background-color: #f7f9fc;
+    color: #222;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto 12px;
 }
 
 p {
     padding: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid #acc;
+    text-align: center;
+    padding: 12px 0;
 }
