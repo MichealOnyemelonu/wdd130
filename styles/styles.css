@@ -1,58 +1,86 @@
+:root {
+    /* Colors */
+    --color-primary: darkblue;
+    --color-light: white;
+    --color-border: #acc;
+    --color-bg-light: #f7f9fc;
+    --color-text-dark: #222;
+    --color-shadow: gray;
+
+    /* Sizing */
+    --content-max-width: 900px;
+    --img-small-width: 150px;
+    --img-medium-width: 200px;
+    --aside-width: 3000px;
+
+    /* Spacing */
+    --space-xs: 0px;
+    --space-sm: 10px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 20px;
+
+    /* Borders & shadows */
+    --default-border: 1px solid var(--color-border);
+    --img-border: 1px solid black;
+    --img-shadow: 0 0 30px var(--color-shadow);
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--color-primary);
+    padding: var(--space-sm);
 }
 
 nav a {
-    color: white;
+    color: var(--color-light);
     display: block;
-    padding: 20px;
+    padding: var(--space-xl);
     text-decoration: none;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color-primary);
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 16px;
+    max-width: var(--content-max-width);
+    margin: var(--space-xs) auto;
+    padding: 0 var(--space-lg);
 }
 
 main img {
-    width: 150px;
+    width: var(--img-small-width);
     height: auto;
-    border: 1px solid black;
-    padding: 10px;
-    box-shadow: 0 0 30px gray;
+    border: var(--img-border);
+    padding: var(--space-sm);
+    box-shadow: var(--img-shadow);
     display: block;
-    margin: 12px;
+    margin: var(--space-md);
 }
 
 aside {
-    width: 3000px;
-    margin: 20px;
-    border: 1px solid #acc;
-    padding: 16px;
-    background-color: #f7f9fc;
-    color: #222;
+    width: var(--aside-width);
+    margin: var(--space-xl);
+    border: var(--default-border);
+    padding: var(--space-lg);
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
 }
 
 aside img {
-    width: 200px;
+    width: var(--img-medium-width);
     height: auto;
     display: block;
-    margin: 0 auto 12px;
+    margin: var(--space-xs) auto var(--space-md);
 }
 
 p {
-    padding: 0px;
+    padding: var(--space-xs);
 }
 
 footer {
     margin-top: 40px;
-    border-top: 1px solid #acc;
+    border-top: var(--default-border);
     text-align: center;
-    padding: 12px 0;
+    padding: var(--space-lg) 0;
 }
