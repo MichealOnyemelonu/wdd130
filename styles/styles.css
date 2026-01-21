@@ -1,86 +1,84 @@
-:root {
-    /* Colors */
-    --color-primary: darkblue;
-    --color-light: white;
-    --color-border: #acc;
-    --color-bg-light: #f7f9fc;
-    --color-text-dark: #222;
-    --color-shadow: gray;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    /* Sizing */
-    --content-max-width: 900px;
-    --img-small-width: 150px;
-    --img-medium-width: 200px;
-    --aside-width: 3000px;
-
-    /* Spacing */
-    --space-xs: 0px;
-    --space-sm: 10px;
-    --space-md: 12px;
-    --space-lg: 16px;
-    --space-xl: 20px;
-
-    /* Borders & shadows */
-    --default-border: 1px solid var(--color-border);
-    --img-border: 1px solid black;
-    --img-shadow: 0 0 30px var(--color-shadow);
+body {
+    font-size: 16px;
+    font-family: Roboto, Arial sans-serif;
 }
 
 nav {
-    background-color: var(--color-primary);
-    padding: var(--space-sm);
+    background-color: steelblue;
+    padding: 10px;
 }
 
 nav a {
-    color: var(--color-light);
+    color: white;
     display: block;
-    padding: var(--space-xl);
-    text-decoration: none;
+    padding: 10px
 }
 
 h1 {
-    color: var(--color-primary);
+    color: steelblue;
+    padding: .5rem
 }
 
 main {
-    max-width: var(--content-max-width);
-    margin: var(--space-xs) auto;
-    padding: 0 var(--space-lg);
+    max-width: 640px;
 }
 
 main img {
-    width: var(--img-small-width);
+    width: 150px;
     height: auto;
-    border: var(--img-border);
-    padding: var(--space-sm);
-    box-shadow: var(--img-shadow);
-    display: block;
-    margin: var(--space-md);
-}
-
-aside {
-    width: var(--aside-width);
-    margin: var(--space-xl);
-    border: var(--default-border);
-    padding: var(--space-lg);
-    background-color: var(--color-bg-light);
-    color: var(--color-text-dark);
-}
-
-aside img {
-    width: var(--img-medium-width);
-    height: auto;
-    display: block;
-    margin: var(--space-xs) auto var(--space-md);
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
-    padding: var(--space-xs);
+    margin: 1rem;
+}
+
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+}
+
+p {
+    padding:
 }
 
 footer {
-    margin-top: 40px;
-    border-top: var(--default-border);
+    margin-top: 1em;
+    border-top: 1px solid #000;
     text-align: center;
-    padding: var(--space-lg) 0;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.indent {
+    padding-left: 2rem;
 }
