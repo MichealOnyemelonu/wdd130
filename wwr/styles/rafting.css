@@ -1,10 +1,11 @@
-/* =========================  
-   CSS Variables  
+/* =========================    
+   CSS Variables    
    ========================= */
 :root {
     --primary-color: #0a6ebd;
     --secondary-color: #0e2a47;
     --accent-color: #f5a524;
+    /* This is the accent color */
     --text-color: #243444;
     --muted-text: #5c6b7a;
     --surface: #ffffff;
@@ -17,8 +18,8 @@
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* =========================  
-   Universal Reset  
+/* =========================    
+   Universal Reset    
    ========================= */
 * {
     margin: 0;
@@ -26,8 +27,8 @@
     box-sizing: border-box;
 }
 
-/* =========================  
-   Base  
+/* =========================    
+   Base    
    ========================= */
 html,
 body {
@@ -47,8 +48,8 @@ img {
     display: block;
 }
 
-/* =========================  
-   Layout Containers  
+/* =========================    
+   Layout Containers    
    ========================= */
 header,
 main,
@@ -58,8 +59,8 @@ footer {
     padding-inline: 16px;
 }
 
-/* =========================  
-   Header & Nav  
+/* =========================    
+   Header & Nav    
    ========================= */
 header {
     background-color: var(--primary-color);
@@ -96,11 +97,11 @@ header nav a {
 
 header nav a:hover,
 header nav a[aria-current="page"] {
-    background: rgba(255, 255, 255, 0.18);
+    background: var(--accent-color);
 }
 
-/* =========================  
-   Headings  
+/* =========================    
+   Headings    
    ========================= */
 h1,
 h2 {
@@ -108,8 +109,8 @@ h2 {
     color: var(--secondary-color);
 }
 
-/* =========================  
-   Shared spacing  
+/* =========================    
+   Shared spacing    
    ========================= */
 nav,
 p,
@@ -119,8 +120,8 @@ article {
     padding: 8px;
 }
 
-/* =========================  
-   Hero Overlay Requirements  
+/* =========================    
+   Hero Overlay Requirements    
    ========================= */
 .hero {
     position: relative;
@@ -172,8 +173,8 @@ article {
     border-radius: 8px;
 }
 
-/* =========================  
-   Sections  
+/* =========================    
+   Sections    
    ========================= */
 section {
     background: var(--surface);
@@ -186,8 +187,8 @@ section + section {
     margin-top: 20px;
 }
 
-/* =========================  
-   Footer & Social  
+/* =========================    
+   Footer & Social    
    ========================= */
 footer {
     color: var(--muted-text);
@@ -217,8 +218,8 @@ footer p {
     opacity: 1;
 }
 
-/* =========================  
-   Responsive  
+/* =========================    
+   Responsive    
    ========================= */
 @media (max-width: 680px) {
     .hero h1 {
