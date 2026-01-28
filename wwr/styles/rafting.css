@@ -74,6 +74,7 @@ header nav {
 
 header nav a {
     text-decoration: none;
+
     color: var(--header-navcolour);
     font-weight: 600;
     padding: 0.4rem 0.8rem;
@@ -81,7 +82,7 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     color: var(--purple-colouur);
 }
 
