@@ -1,8 +1,6 @@
 /* ===================== CSS VARIABLES ===================== */
 :root {
     --primary-color: steelblue;
-    /* deep purple */
-    /* light purple */
     --text-color: black;
     --border-color: #ccc;
     --white-color: white;
@@ -153,7 +151,7 @@ main section {
     margin-top: 2rem;
     padding: 1.5rem;
     border: 1px solid var(--border-color);
-    background-color: var(--background-color);
+    background-color: var(--header-navcolour);
 }
 
 main section h2 {
