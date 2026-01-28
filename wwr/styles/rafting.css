@@ -1,10 +1,12 @@
 /* ===================== CSS VARIABLES ===================== */
 :root {
     --primary-color: steelblue;
-    --text-color: black;
+    --text-color: #000000;
     --border-color: #ccc;
-    --white-color: white;
-    --header-navcolour: #f7f7f7;
+    --white-color: #ffffff;
+    --header-navcolour: #ffffff;
+    --section-bg: #f7f7f7;
+
     --purple-colouur: rebeccapurple;
 
 }
@@ -157,7 +159,7 @@ main section {
     margin-top: 2rem;
     padding: 1.5rem;
     border: 1px solid var(--border-color);
-    background-color: var(--header-navcolour);
+    background-color: var(--section-bg);
     color: var(--text-color);
 }
 
