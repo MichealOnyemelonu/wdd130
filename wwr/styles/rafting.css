@@ -117,11 +117,13 @@ main {
     /* REQUIRED */
     top: 20%;
     left: 50%;
-    transform: translateX(-50%);
-    color: var(--text-color);
-    font-size: 2rem;
+    transform: translateX(-40%);
+    text-shadow: 0 2px 6px rgba(204, 204, 204, 0.5);
+    color: #fff;
 
-    background: rgb(0, 0, 0, 0.4);
+    font-size: 1.5rem;
+
+    background: rgba(0, 0, 0, 0.60);
     padding: .5rem 1rem;
     border-radius: 5px;
 }
