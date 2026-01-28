@@ -1,17 +1,29 @@
-/* ===================== CSS VARIABLES ===================== */
+/* ===================== CSS VARIABLES (standardized to rgb/alpha) ===================== */
 :root {
-    --primary-color: steelblue;
-    --text-color: #000000;
-    --border-color: #ccc;
-    --white-color: #ffffff;
-    --section-bg: #f7f7f7;
+    /* Brand & Surfaces */
+    --primary-color: rgb(70 130 180);
+    /* steelblue */
+    --text-color: rgb(0 0 0);
+    /* black */
+    --border-color: rgb(204 204 204);
+    /* #ccc */
+    --white-color: rgb(255 255 255);
+    /* white */
+    --section-bg: rgb(247 247 247);
+    /* #f7f7f7 */
 
-    --purple-colouur: rebeccapurple;
+    /* Accents */
+    --purple-color: rgb(102 51 153);
+    /* rebeccapurple */
 
+    /* Utilities */
+    --shadow-soft: rgb(204 204 204 / 0.5);
+    /* soft gray shadow */
+    --overlay-dark: rgb(0 0 0 / 0.60);
+    /* 60% black overlay */
 }
 
 /* ========== Global Reset & Base Styles ========== */
-
 *,
 *::before,
 *::after {
@@ -22,7 +34,7 @@
 
 a {
     color: var(--text-color);
-    /* ensure all links default to black */
+    /* default readable links */
     text-decoration: none;
 }
 
@@ -31,9 +43,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     color: var(--text-color);
+    background: var(--white-color);
 }
 
-/* Utility for visually hidden text (you already use this class) */
+/* Utility: visually hidden */
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -46,8 +59,6 @@ body {
 }
 
 /* ========== HEADER ========== */
-/* Requirements: Grid in header, Flex in nav */
-
 header {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -55,44 +66,41 @@ header {
     align-items: center;
     padding: 1rem 5%;
     background-color: var(--primary-color);
-    /* soft purple, like the wireframe */
+    color: var(--white-color);
 }
 
-/* Logo image */
 header .logo {
     max-height: 70px;
 }
 
-/* NAV uses flex to lay out links horizontally */
 header nav {
     display: flex;
     justify-content: flex-end;
-    /* push links to the right */
     gap: 1.5rem;
 }
 
 header nav a {
-    text-decoration: none;
-
     color: var(--text-color);
+    /* you chose dark text for header links */
     font-weight: 600;
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
+    line-height: 1.2;
 }
 
 header nav a:hover {
     background-color: var(--text-color);
-    color: var(--purple-colouur);
+    /* dark pill */
+    color: var(--purple-color);
+    /* readable on dark */
 }
 
 /* ========== MAIN CONTENT WRAPPER ========== */
-
 main {
     padding: 0 5% 2rem;
 }
 
 /* ========== HERO SECTION ========== */
-
 .hero {
     margin-top: 1rem;
     padding: 1.5rem;
@@ -117,12 +125,11 @@ main {
     top: 20%;
     left: 50%;
     transform: translateX(-40%);
-    text-shadow: 0 2px 6px rgba(204, 204, 204, 0.5);
-    color: #fff;
-
+    text-shadow: 0 2px 6px var(--shadow-soft);
+    color: var(--white-color);
     font-size: 1.5rem;
-
-    background: rgba(0, 0, 0, 0.60);
+    background: var(--overlay-dark);
+    /* rgb(0 0 0 / 0.60) */
     padding: .5rem 1rem;
     border-radius: 5px;
 }
@@ -139,6 +146,7 @@ main {
     left: 5%;
     right: 5%;
     background: var(--border-color);
+    color: var(--text-color);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -151,12 +159,6 @@ main {
 }
 
 /* ========== HISTORY SECTION ========== */
-/* Requirement: Layout History elements similar to wireframe (text – image – text).
-   For this, it's easier if you add class="history" to the first section
-   and inside it a wrapper with three elements (p, img, p).
-*/
-
-/* General section styling */
 main section {
     margin-top: 2rem;
     padding: 1.5rem;
@@ -193,16 +195,11 @@ section.history .history-layout img {
     display: block;
 }
 
-/* If you don't add the .history-layout div yet, the section will still show normally. */
-
 /* ========== ADVENTURE AWAITS YOU SECTION ========== */
-/* Requirement: five images horizontally with figure/figcaption */
-
 section.adventures p {
     text-align: center;
 }
 
-/* Container that will hold 5 figure items in a row */
 section.adventures .adventure-gallery {
     margin-top: 1.5rem;
     display: flex;
@@ -218,6 +215,7 @@ section.adventures .adventure-gallery figure {
     /* 5 equal items per row */
     text-align: center;
     background-color: var(--border-color);
+    color: var(--text-color);
     padding: 0.75rem;
     border-radius: 4px;
 }
@@ -234,10 +232,9 @@ section.adventures .adventure-gallery figcaption {
 }
 
 /* ========== FOOTER ========== */
-/* Requirement: social media icons horizontal and aligned right */
-
 footer {
     background-color: var(--primary-color);
+    color: var(--white-color);
     padding: 1rem 5%;
     display: flex;
     align-items: center;
@@ -249,7 +246,6 @@ footer p {
     margin: 0;
 }
 
-/* Social media nav */
 footer .socialmedia {
     display: flex;
     gap: 0.5rem;
@@ -262,10 +258,7 @@ footer .socialmedia img {
 }
 
 /* ========== RESPONSIVE ADJUSTMENTS ========== */
-
 @media (max-width: 700px) {
-
-    /* Stack logo and nav on small screens */
     header {
         grid-template-columns: 1fr;
         row-gap: 0.5rem;
@@ -276,7 +269,6 @@ footer .socialmedia img {
         flex-wrap: wrap;
     }
 
-    /* Stack hero article elements */
     .hero article {
         grid-template-columns: 1fr;
         text-align: center;
@@ -286,7 +278,6 @@ footer .socialmedia img {
         margin: 0 auto;
     }
 
-    /* Stack history columns on small screens */
     section.history .history-layout {
         grid-template-columns: 1fr;
         text-align: center;
@@ -296,7 +287,6 @@ footer .socialmedia img {
         margin: 0 auto;
     }
 
-    /* Show 2–3 adventure cards per row on smaller screens */
     section.adventures .adventure-gallery figure {
         flex: 1 1 calc(50% - 1rem);
         /* about 2 per row */
