@@ -4,7 +4,7 @@
     --text-color: black;
     --border-color: #ccc;
     --white-color: white;
-    --header-navcolour: white;
+    --header-navcolour: #f7f7f7;
     --purple-colouur: rebeccapurple;
 
 }
@@ -152,6 +152,16 @@ main section {
     padding: 1.5rem;
     border: 1px solid var(--border-color);
     background-color: var(--header-navcolour);
+    color: var(--text-color);
+}
+
+main section h1,
+main section h2,
+main section h3,
+main section h4,
+main section p,
+main section a {
+    color: var(--text-color);
 }
 
 main section h2 {
