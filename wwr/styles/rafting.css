@@ -118,7 +118,7 @@ main {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    color: var(--white-color);
+    color: var(--text-color);
     font-size: 2rem;
 
     background: rgb(0, 0, 0, 0.4);
