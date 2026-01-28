@@ -5,7 +5,7 @@
     --border-color: #ccc;
     --white-color: white;
     --header-navcolour: white;
-    --purple-colouur: purple;
+    --purple-colouur: rebeccapurple;
 
 }
 
@@ -112,7 +112,7 @@ main {
     color: var(--white-color);
     font-size: 2rem;
 
-    background: transparent;
+    background: rgb(0, 0, 0, 0.4);
     padding: .5rem 1rem;
     border-radius: 5px;
 }
