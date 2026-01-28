@@ -1,0 +1,355 @@
+/* =========================    
+   CSS Variables    
+   ========================= */
+:root {
+    --primary-color: #0a6ebd;
+    --secondary-color: #0e2a47;
+    --accent-color: royalblue;
+    /* This is the accent color */
+    --text-color: #243444;
+    --muted-text: #5c6b7a;
+    --surface: #ffffff;
+    --surface-alt: #f3f6fa;
+    --overlay: rgba(10, 110, 189, 0.75);
+    --heading-font: "Times New Roman", Georgia, serif;
+    --body-font: Arial, Helvetica, sans-serif;
+    --max-width: 960px;
+    --radius: 12px;
+    --shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================    
+   Universal Reset    
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================    
+   Base    
+   ========================= */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background: linear-gradient(180deg, #fff, var(--surface-alt));
+    line-height: 1.6;
+}
+
+header nav {
+    display: flex;
+    gap: 10 px;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+header nav a {
+    background-color: steelblue;
+    padding: 8px;
+    border-radius: 8px;
+    display: ;
+    flex-direction: ;
+    justify-content: space-evenly;
+    align-items: normal;
+}
+
+header nav a:hover {
+    background: var(--accent-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================    
+   Layout Containers    
+   ========================= */
+header,
+main,
+footer {
+    width: min(100%, var(--max-width));
+    margin: 0 auto;
+    padding-inline: 16px;
+}
+
+/* =========================    
+   Header & Nav    
+   ========================= */
+header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 16px;
+    border-bottom-left-radius: var(--radius);
+    border-bottom-right-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* =========================    
+   Headings    
+   ========================= */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--secondary-color);
+}
+
+/* =========================    
+   Shared spacing    
+   ========================= */
+nav,
+p,
+section,
+article {
+    margin: 16px 0;
+    padding: 8px;
+}
+
+/* =========================    
+   Hero Overlay Requirements    
+   ========================= */
+.hero {
+    position: relative;
+    margin-top: 24px;
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: #000;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.85) saturate(1.05);
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 32px);
+    max-width: 780px;
+    padding: 16px 20px;
+    text-align: center;
+    background-color: var(--overlay);
+    color: #fff;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.hero article {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    max-width: 560px;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--secondary-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    display: flow-root;
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 8px;
+}
+
+/* =========================    
+   Sections    
+   ========================= */
+section {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 16px;
+}
+
+section + section {
+    margin-top: 20px;
+}
+
+/* =========================    
+   Footer & Social    
+   ========================= */
+footer {
+    color: var(--muted-text);
+    padding: 24px 16px 40px;
+}
+
+footer p {
+    padding: 0;
+    margin-bottom: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.socialmedia img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.15s ease-in-out, opacity 0.15s ease-in-out;
+    opacity: 0.9;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.06);
+    opacity: 1;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* =========================    
+   Responsive    
+   ========================= */
+@media (max-width: 680px) {
+    .hero h1 {
+        font-size: 1.05rem;
+        padding: 12px 14px;
+    }
+
+    .hero article {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .hero article img {
+        width: 96px;
+    }
+
+    header nav {
+        gap: 8px;
+    }
+
+    header nav a {
+        padding: 6px 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#############################################################################################################
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Micheal and Sons</title>
+    <meta name="description"
+      content="Discover Micheal O. and Sons—safe, guided rafting and kayaking adventures that create unforgettable memories for families, groups, and solo travelers." />
+    <meta name="author" content="Micheal O.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-boat.png" class="logo" alt="Micheal O. and Sons logo" />
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/rafting60_1024.jpg" alt="Group rafting on a scenic river" />
+            <h1>About Us — Unforgettable Experience</h1>
+
+            <article>
+                <h2 class="visually-hidden">About Our Experience</h2>
+                <p>
+                    Welcome to the beginning of a wonderful adventure with us. At
+                    <strong>Micheal O. and Sons</strong>, we create memorable experiences on the
+                    water with safe, guided rafting and kayaking for all skill levels.
+                </p>
+                <img src="images/z-boat.png" alt="Company boat icon" />
+            </article>
+        </div><!-- END .hero -->
+
+
+        <!-- First section with History -->
+        <section>
+            <h2>History</h2>
+            <p>
+                <strong>Micheal O. and Sons</strong> was founded in 2025 and has since provided
+                great experiences for tourists on vacation and weekend getaways. Families love
+                spending time together, kayaking with our state-of-the-art kayaks and expert
+                guides.
+            </p>
+        </section>
+
+        <!-- Second section with Adventure Awaits You -->
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            <p>
+                From calm-water floats to thrilling whitewater, we've got a trip that matches
+                your
+                style. Book today and make your next story an unforgettable one.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 | Micheal O. and Sons | Nigeria</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook_3488287.png" alt="Facebook" />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin_779096.png" alt="LinkedIn" />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/social_15466200.png" alt="Instagram" />
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
