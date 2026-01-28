@@ -1,14 +1,16 @@
 /* ===================== CSS VARIABLES ===================== */
 :root {
-    --primary-color: #4a2ea4;
+    --primary-color: steelblue;
     /* deep purple */
-    --secondary-color: #d8c9ff;
+    --secondary-color: gray;
     /* light purple */
-    --text-color: #222;
+    --text-color: black;
     --light-bg: #f7f7ff;
     --border-color: #ccc;
+    --white-color: white;
     --header-navcolour: white;
-    --background-color: white
+    --purple-colouur: purple;
+
 }
 
 /* ========== Global Reset & Base Styles ========== */
@@ -23,7 +25,7 @@ body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     line-height: 1.5;
-    color: #222;
+    color: var(--text-color);
 }
 
 /* Utility for visually hidden text (you already use this class) */
@@ -48,7 +50,7 @@ header {
     /* logo | nav */
     align-items: center;
     padding: 1rem 5%;
-    background-color: steelblue;
+    background-color: var(--primary-color);
     /* soft purple, like the wireframe */
 }
 
@@ -74,8 +76,8 @@ header nav a {
 }
 
 header nav a:hover {
-    background-color: #fff;
-    color: #4a2ea4;
+    background-color: var(--white-color);
+    color: var(--primary-color);
 }
 
 /* ========== MAIN CONTENT WRAPPER ========== */
@@ -110,10 +112,10 @@ main {
     top: 20%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: var(--white-color);
     font-size: 2rem;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
-    background: rgba(0, 0, 0, 0.2);
+    text-shadow: 0 2px 5px, var(--text-color);
+    background: transparent;
     padding: .5rem 1rem;
     border-radius: 5px;
 }
@@ -126,10 +128,10 @@ main {
     align-items: center;
     position: absolute;
     /* REQUIRED */
-    bottom: 10%;
+    bottom: 3%;
     left: 5%;
     right: 5%;
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--border-color);
     padding: 1rem;
     border-radius: 5px;
 }
@@ -138,6 +140,7 @@ main {
     width: 80px;
     height: auto;
     margin-left: 1rem;
+    float: right;
 }
 
 /* ========== HISTORY SECTION ========== */
@@ -197,7 +200,7 @@ section.adventures .adventure-gallery figure {
     flex: 1 1 calc(20% - 1rem);
     /* 5 equal items per row */
     text-align: center;
-    background-color: #f5f5f5;
+    background-color: var(--border-color);
     padding: 0.75rem;
     border-radius: 4px;
 }
@@ -217,7 +220,7 @@ section.adventures .adventure-gallery figcaption {
 /* Requirement: social media icons horizontal and aligned right */
 
 footer {
-    background-color: steelblue;
+    background-color: var(--primary-color);
     padding: 1rem 5%;
     display: flex;
     align-items: center;
