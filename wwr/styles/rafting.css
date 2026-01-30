@@ -82,7 +82,7 @@ header nav a {
 
 header nav a:hover {
     background-color: var(--text-color);
-    color: var(--purple-colouur);
+    color: var(--white-color);
 }
 
 /* ========== MAIN CONTENT WRAPPER ========== */
