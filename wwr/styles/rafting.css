@@ -1,13 +1,17 @@
 /* ===================== CSS VARIABLES ===================== */
 :root {
     --primary-color: steelblue;
+    /* Header/footer background */
     --text-color: #000000;
-    --border-color: #ccc;
+    /* Body text */
     --white-color: #ffffff;
-    --section-bg: #f7f7f7;
-
-    --purple-colouur: rebeccapurple;
-
+    /* White backgrounds */
+    --background-light: #f7f7f7;
+    /* Soft background */
+    --accent-color: rebeccapurple;
+    /* Highlights, hover states */
+    --overlay-dark: rgba(0, 0, 0, 0.75);
+    /* Hero title overlay */
 }
 
 /* ========== Global Reset & Base Styles ========== */
@@ -74,15 +78,15 @@ header nav {
 header nav a {
     text-decoration: none;
 
-    color: var(--text-color);
+    color: var(--white-color);
     font-weight: 600;
     padding: 0.4rem 0.8rem;
     border-radius: 4px;
 }
 
 header nav a:hover {
-    background-color: var(--text-color);
-    color: var(--purple-colouur);
+    background-color: var(--accent-color);
+    color: var(--white-color);
 }
 
 /* ========== MAIN CONTENT WRAPPER ========== */
@@ -118,11 +122,11 @@ main {
     left: 50%;
     transform: translateX(-40%);
     text-shadow: 0 2px 6px rgba(204, 204, 204, 0.5);
-    color: #fff;
+    color: var(--white-color);
 
     font-size: 1.5rem;
 
-    background: rgba(0, 0, 0, 0.60);
+    background: var(--overlay-dark);
     padding: .5rem 1rem;
     border-radius: 5px;
 }
@@ -161,7 +165,7 @@ main section {
     margin-top: 2rem;
     padding: 1.5rem;
     border: 1px solid var(--border-color);
-    background-color: var(--section-bg);
+    background-color: var(--background-light);
     color: var(--text-color);
 }
 
