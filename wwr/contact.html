@@ -2,16 +2,14 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micheal Rafting Enterprise - Contact Us</title>
     <meta name="description"
-      content="Contact Micheal Rafting Enterprise. Find our address, phone, email, and send a message about reservations, general questions, or website suggestions." />
-    <meta name="author" content="Micheal Onyemelonu." />
-    <link rel="stylesheet" href="styles/rafting.css" />
-    <style>
+      content="Contact Micheal Rafting Enterprise. Find our address, phone, email, and send a message about reservations, general questions, or website suggestions.">
+    <meta name="author" content="Micheal Onyemelonu.">
+    <link rel="stylesheet" href="styles/rafting.css">
 
-    </style>
 </head>
 
 <body>
@@ -36,20 +34,24 @@
         <section class="contact-info" aria-labelledby="contact-info-title">
             <h2 id="contact-info-title">Company Information</h2>
 
-            <address class="contact-card">
-                <h3>Micheal Rafting Enterprise</h3>
-                <p>
-                    123 River Bend Road<br />
-                    Port Harcourt, Rivers State 500272<br />
-                    Nigeria
-                </p>
-                <p>
-                    <strong>Phone:</strong> <a href="tel:+2348012345678">+234 80 1234 5678</a><br />
-                    <strong>Email:</strong> <a
-                      href="mailto:hello@michealrafting.com">hello@michealrafting.com</a>
-                </p>
-                <p><strong>Hours:</strong> Mon–Sat 9:00–18:00 (WAT)</p>
-            </address>
+            <div class="contact-card">
+                <h3 class="company-name">Micheal Rafting Enterprise</h3>
+
+                <address>
+                    <p>
+                        123 River Bend Road<br />
+                        Port Harcourt, Rivers State 500272<br />
+                        Nigeria
+                    </p>
+                    <p>
+                        <strong>Phone:</strong> <a href="tel:+2348012345678">+234 80 1234
+                            5678</a><br />
+                        <strong>Email:</strong> <a
+                          href="mailto:hello@michealrafting.com">hello@michealrafting.com</a>
+                    </p>
+                    <p><strong>Hours:</strong> Mon–Sat 9:00–18:00 (WAT)</p>
+                </address>
+            </div>
 
             <figure class="map">
                 <!-- Replace the src with your actual Google Maps embed URL -->
@@ -69,16 +71,16 @@
 
             <div class="team-grid">
                 <figure class="team-card">
-                    <img src="images/employee_mary.jpg"
-                      alt="Portrait of Mary Johnson, Operations Manager" />
+                    <img src="images/Johnson.jpg"
+                      alt="Portrait of Peter Johnson, Operations Manager" />
                     <figcaption>
-                        <strong>Mary Johnson</strong><br />
+                        <strong>Peter Johnson</strong><br />
                         <span class="title">Operations Manager</span>
                     </figcaption>
                 </figure>
 
                 <figure class="team-card">
-                    <img src="images/employee_sam.jpg"
+                    <img src="images/samuel.jpg"
                       alt="Portrait of Samuel Adebayo, Lead River Guide" />
                     <figcaption>
                         <strong>Samuel Adebayo</strong><br />
@@ -87,10 +89,10 @@
                 </figure>
 
                 <figure class="team-card">
-                    <img src="images/employee_lina.jpg"
-                      alt="Portrait of Lina Okonkwo, Guest Services Specialist" />
+                    <img src="images/mary.jpg"
+                      alt="Portrait of Mary Okonkwo, Guest Services Specialist" />
                     <figcaption>
-                        <strong>Lina Okonkwo</strong><br />
+                        <strong>Mary Okonkwo</strong><br />
                         <span class="title">Guest Services Specialist</span>
                     </figcaption>
                 </figure>
@@ -122,20 +124,16 @@
                     <legend>Purpose of Message</legend>
 
                     <div class="radio-group">
-                        <label class="radio">
-                            <input type="radio" name="purpose" value="general" required />
-                            General Inquiry
-                        </label>
+                        <input type="radio" id="purpose-general" name="purpose" value="general"
+                          required>
+                        <label class="radio" for="purpose-general">General Inquiry</label>
 
-                        <label class="radio">
-                            <input type="radio" name="purpose" value="reservation" />
-                            Reservation Question
-                        </label>
+                        <input type="radio" id="purpose-reservation" name="purpose"
+                          value="reservation">
+                        <label class="radio" for="purpose-reservation">Reservation Question</label>
 
-                        <label class="radio">
-                            <input type="radio" name="purpose" value="website" />
-                            Website Suggestion
-                        </label>
+                        <input type="radio" id="purpose-website" name="purpose" value="website">
+                        <label class="radio" for="purpose-website">Website Suggestion</label>
                     </div>
 
                     <p id="purpose-help" class="help-text">

@@ -299,84 +299,69 @@ footer .socialmedia img {
     }
 }
 
-/*=========================================================================== */
-/* Page-scoped helpers (optional). Move to rafting.css if preferred. */
-.section-sep {
-    margin: 2rem 0;
+/* ===== Contact page layout (matches wireframe) ===== */
+
+/* Simple utility */
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
     border: 0;
-    border-top: 1px solid #e6e6e6;
+    padding: 0;
+    margin: -1px;
 }
 
-/* Team */
-.team {
-    padding: 1rem 0;
+.hero--contact {
+    background: #d9ccff;
+    /* lavender per wireframe vibe */
+    min-height: 80px;
+    border-bottom: 1px solid #c3b6f5;
 }
 
-.team-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.team-card {
-    margin: 0;
-    padding: .75rem;
-    border: 1px solid #e5e9f2;
-    border-radius: 8px;
-    background: #fff;
+/* Company block (centered) */
+.company-block {
     text-align: center;
+    padding: 1.25rem 1rem 0.5rem;
 }
 
-.team-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4/3;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: .5rem;
+.company-block h1 {
+    font-size: 1.8rem;
+    margin: 0 0 .25rem;
 }
 
-.team-card .title {
-    color: #4b5b6a;
-    font-size: .95rem;
+.company-address {
+    font-style: normal;
+    /* make it non-italic for readability */
+    line-height: 1.5;
 }
 
-/* Company info + map */
-.contact-info {
+/* Split area (map left, form right) */
+.contact-split {
     display: grid;
-    gap: 1rem;
     grid-template-columns: 1fr;
-    margin: 1rem 0 2rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
-.contact-card {
-    background: #f7f9fc;
-    border: 1px solid #e5e9f2;
-    padding: 1rem 1.25rem;
-    border-radius: 8px;
-}
-
-.map iframe {
+.contact-split__map iframe {
     width: 100%;
-    height: 300px;
-    border: 0;
+    height: 280px;
+    border: 1px solid #e2e2e2;
     border-radius: 6px;
 }
 
-/* Form */
-.contact-form {
-    padding: 1rem 0 2rem;
-}
-
-.contact-form__form {
+.contact-split__form .contact-form {
     display: grid;
-    gap: 1rem;
-    max-width: 640px;
+    gap: .9rem;
+    max-width: 520px;
 }
 
 .form-row {
     display: grid;
-    gap: .5rem;
+    gap: .45rem;
 }
 
 label {
@@ -386,20 +371,21 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-    padding: 0.6rem 0.7rem;
     border: 1px solid #ccd6e0;
     border-radius: 6px;
+    padding: .6rem .7rem;
     font: inherit;
 }
 
-.radio-group {
+.radio-list {
     display: grid;
-    gap: .4rem;
-    padding: .25rem 0;
+    grid-template-columns: 1fr;
+    gap: .35rem;
 }
 
-.radio {
-    display: inline-flex;
+.checkbox-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     gap: .5rem;
 }
@@ -410,19 +396,18 @@ textarea {
     margin: .2rem 0 0;
 }
 
-.checkbox-row input[type="checkbox"] {
-    margin-right: .5rem;
-}
-
-.btn-primary {
+.btn {
     display: inline-block;
-    background: #1769aa;
-    color: #fff;
     border: 0;
     border-radius: 6px;
     padding: .7rem 1rem;
     font-weight: 700;
     cursor: pointer;
+}
+
+.btn-primary {
+    background: #1769aa;
+    color: #fff;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
 }
 
@@ -435,9 +420,52 @@ textarea {
     outline-offset: 2px;
 }
 
-@media (min-width: 768px) {
-    .contact-info {
-        grid-template-columns: 1fr 1fr;
+/* Team panel (framed card like wireframe) */
+.team-panel {
+    margin: 1.5rem 1rem 2rem;
+    padding: 1rem;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    background: #fafafa;
+}
+
+.team-panel h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.team-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-card {
+    border: 1px dashed #c9c9c9;
+    border-radius: 8px;
+    text-align: center;
+    padding: .75rem;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    background: #efefef;
+    border-radius: 6px;
+    margin-bottom: .5rem;
+}
+
+/* Responsive: two-column split for md+ */
+@media (min-width: 820px) {
+    .contact-split {
+        grid-template-columns: 1.1fr .9fr;
+        /* map slightly wider, per wireframe */
         align-items: start;
+    }
+
+    .contact-split__map iframe {
+        height: 360px;
     }
 }
