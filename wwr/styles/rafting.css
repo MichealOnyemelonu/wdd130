@@ -298,3 +298,146 @@ footer .socialmedia img {
         /* about 2 per row */
     }
 }
+
+/*=========================================================================== */
+/* Page-scoped helpers (optional). Move to rafting.css if preferred. */
+.section-sep {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #e6e6e6;
+}
+
+/* Team */
+.team {
+    padding: 1rem 0;
+}
+
+.team-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.team-card {
+    margin: 0;
+    padding: .75rem;
+    border: 1px solid #e5e9f2;
+    border-radius: 8px;
+    background: #fff;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: .5rem;
+}
+
+.team-card .title {
+    color: #4b5b6a;
+    font-size: .95rem;
+}
+
+/* Company info + map */
+.contact-info {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    margin: 1rem 0 2rem;
+}
+
+.contact-card {
+    background: #f7f9fc;
+    border: 1px solid #e5e9f2;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 6px;
+}
+
+/* Form */
+.contact-form {
+    padding: 1rem 0 2rem;
+}
+
+.contact-form__form {
+    display: grid;
+    gap: 1rem;
+    max-width: 640px;
+}
+
+.form-row {
+    display: grid;
+    gap: .5rem;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #ccd6e0;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.radio-group {
+    display: grid;
+    gap: .4rem;
+    padding: .25rem 0;
+}
+
+.radio {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.help-text {
+    color: #5f6b76;
+    font-size: .9rem;
+    margin: .2rem 0 0;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #1769aa;
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    padding: .7rem 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
+}
+
+.btn-primary:hover {
+    background: #12588e;
+}
+
+.btn-primary:focus {
+    outline: 3px solid #97c3ec;
+    outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+}
