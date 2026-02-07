@@ -383,7 +383,7 @@ textarea {
 }
 
 .help-text {
-    color: #5f6b76;
+    color: var(--text-color);
     font-size: .9rem;
     margin: .2rem 0 0;
 }
@@ -398,7 +398,7 @@ textarea {
 }
 
 .btn-primary {
-    background: #1769aa;
+    background: var(--primary-color);
     color: var(--text-color);
     box-shadow: 0 2px 6px rgba(0, 0, 0, .08);
 }
