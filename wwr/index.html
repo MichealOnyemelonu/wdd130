@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micheal Rafting Enterprise - Home Page</title>
+    <meta name="description"
+      content="Discover Micheal Rafting Enterprise, guided rafting and kayaking adventures that create unforgettable memories for families, groups, and solo travelers." />
+    <meta name="author" content="Micheal Onyemelonu.">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/z-boat.png" class="logo" alt="Micheal O. and Sons logo" />
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <img src="images/hero.jpg" alt="Group of rafters navigating whitewater rapids"
+          class="hero__img" />
+        <div class="hero__message" role="banner" aria-label="Hero message">
+            <h1 class="hero__title">Find Your Flow</h1>
+            <p class="hero__subtitle">Guided white water adventures for every skill level</p>
+            <a class="btn btn--primary" href="trips.html">Explore Trips</a>
+        </div>
+        </section>
+
+        <!-- Newsletter signup -->
+        <section class="newsletter wrapper" aria-labelledby="newsletter-title">
+            <h2 id="newsletter-title">Get River-Ready Tips & Deals</h2>
+            <p class="lede">Join our newsletter for seasonal discounts, trip openings, and safety
+                tips.</p>
+
+            <form class="form grid-form" method="post" action="#" novalidate>
+                <div class="form-field">
+                    <label for="name">Name<span aria-hidden="true"> *</span></label>
+                    <input type="text" id="name" name="name" required autocomplete="name"
+                      placeholder="Jane Doe" />
+                    <small class="hint">Required</small>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email<span aria-hidden="true"> *</span></label>
+                    <input type="email" id="email" name="email" required autocomplete="email"
+                      placeholder="jane@example.com" />
+                    <small class="hint">We’ll never share your email.</small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn--accent">Subscribe</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta" aria-labelledby="cta-title">
+            <div class="wrapper cta__inner">
+                <h2 id="cta-title">Ready to Ride the Rapids?</h2>
+                <p>From family floats to Class IV thrills, our guides have you covered.</p>
+                <a class="btn btn--primary btn--lg" href="trips.html"
+                  aria-describedby="cta-title">See
+                    Available Trips</a>
+            </div>
+        </section>
+
+        <!-- Purpose & Offerings (CSS Grid layout with images) -->
+        <section class="features wrapper" aria-labelledby="features-title">
+            <h2 id="features-title">Why Raft with Micheal Rafting Enterprise</h2>
+
+            <div class="features__grid">
+                <article class="card">
+                    <img src="images/feature-1.jpg"
+                      alt="Certified guide steering a raft through a wave" class="card__img" />
+                    <div class="card__body">
+                        <h3>Certified Guides</h3>
+                        <p>Our team is Swiftwater Rescue certified and trained for safety-first fun,
+                            every
+                            time.</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="images/feature-2.jpg"
+                      alt="Family smiling in a raft on a calm stretch of river" class="card__img" />
+                    <div class="card__body">
+                        <h3>Trips for Everyone</h3>
+                        <p>Choose from scenic family floats to adrenaline-packed rapids across
+                            multiple
+                            rivers.</p>
+                    </div>
+                </article>
+
+                <article class="card card--highlight">
+                    <div class="card__body">
+                        <h3>All-Inclusive Options</h3>
+                        <p>Gear, snacks, and transport available so you can focus on making
+                            memories.</p>
+                        <a class="btn btn--ghost" href="trips.html">Browse Packages</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 | Micheal Rafting Enterprise| Micheal Onyemelonu | Nigeria</p>
+        <nav class="socialmedia" aria-label="Social media links">
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook_3488287.png"
+                  alt="This is the Facebook icon which helps clients to indentify where to click if they want to reach via Facebook" />
+            </a>
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin_779096.png"
+                  alt="This is the Linkedin icon which helps clients to indentify where to click if they want to reach via Linkedin" />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/social_15466200.png"
+                  alt="This is the Instagram icon which helps clients to indentify where to click if they want to reach via instagram" />
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
