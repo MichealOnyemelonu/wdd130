@@ -9,6 +9,7 @@
 }
 
 /* Universal selector and declaration for all elements */
+/* for better understanding i will divide this css into weeks so i don't get confused */
 
 * {
     margin: 0;
@@ -81,3 +82,5 @@ article {
     float: right;
     width: 125px;
 }
+
+/* end of week 1 */
