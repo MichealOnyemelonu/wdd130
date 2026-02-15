@@ -68,6 +68,15 @@ article {
     color: var(--text-color);
 }
 
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--white-color);
+    padding: 16px;
+    opacity: 0.9;
+}
+
 .hero article img {
     float: right;
     width: 125px;
