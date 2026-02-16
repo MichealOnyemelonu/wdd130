@@ -183,3 +183,38 @@ footer .socialmedia img {
     object-fit: contain;
 
 }
+
+/* End of week 2 assignment, everything is working fine */
+
+/* Here we begin week 6 specifically for index.html */
+
+form {
+    max-width: 1000px;
+    border: 2px solid var(--border-color);
+    padding: 30px;
+    border-radius: 5px;
+    display: grid;
+    gap: 5px;
+
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid grey;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+button:hover {
+    background-color: var(--border-color);
+    cursor: pointer;
+}
