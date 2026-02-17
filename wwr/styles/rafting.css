@@ -33,7 +33,6 @@ header {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    align-items: center;
     padding-bottom: 0%;
     background-color: var(--primary-color);
     border-radius: 6px;
