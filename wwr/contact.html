@@ -25,25 +25,12 @@
     </header>
 
     <main>
-        <h1>Micheal Rafting Enterprise</h1>
-
-        <section class="map location" aria-labelledby="map info">
-            <figure class="map">
-                <iframe title="Micheal Rafting Enterprise Location" loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.000000000000!2d7.000000!3d4.800000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3AMichealRafting!2sPort%20Harcourt!5e0!3m2!1sen!2sNG!4v1700000000000">
-                </iframe>
-                <figcaption>Find us near the Imo.</figcaption>
-            </figure>
-        </section>
 
 
-        <section class="contact-info" aria-labelledby="contact-info-title">
-            <h2 id="contact-info-title">Micheal Rafting Enterprise</h2>
+        <section class="locate-us" aria-labelledby="contact-info-title">
+            <h1 id="contact-info-title">Micheal Rafting Enterprise</h1>
 
-            <div class="contact-card">
-                <h3 class="company-name">Micheal Rafting Enterprise</h3>
-
+            <div class="locate-us-grip">
                 <address>
                     <p>
                         123 River Bend Road<br />
@@ -60,6 +47,84 @@
                 </address>
             </div>
         </section>
+
+        <div class="contact-grid">
+            <section class="map-location" aria-labelledby="map info">
+                <figure class="map">
+                    <iframe title="Micheal Rafting Enterprise Location" loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.000000000000!2d7.000000!3d4.800000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3AMichealRafting!2sPort%20Harcourt!5e0!3m2!1sen!2sNG!4v1700000000000">
+                    </iframe>
+                    <figcaption>Find us near the Imo.</figcaption>
+                </figure>
+            </section>
+
+            <section class="contact-form" aria-labelledby="contact-form-title">
+                <h2 id="contact-form-title">Send Us a Message</h2>
+                <p>Have a question or suggestion? We'd love to hear from you.</p>
+
+                <form action="#" method="post" class="contact-form__form" novalidate>
+
+                    <div class="form-row">
+                        <label for="name">Full Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required />
+                    </div>
+
+
+                    <div class="form-row">
+                        <label for="email">Email Address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required />
+                    </div>
+
+
+                    <fieldset class="form-row" aria-describedby="purpose-help">
+                        <legend>Purpose of Message</legend>
+
+                        <div class="radio-group">
+                            <input type="radio" id="purpose-general" name="purpose" value="general"
+                              required>
+                            <label class="radio" for="purpose-general">General Inquiry</label>
+
+                            <input type="radio" id="purpose-reservation" name="purpose"
+                              value="reservation">
+                            <label class="radio" for="purpose-reservation">Reservation
+                                Question</label>
+
+                            <input type="radio" id="purpose-website" name="purpose" value="website">
+                            <label class="radio" for="purpose-website">Website Suggestion</label>
+                        </div>
+
+                        <p id="purpose-help" class="help-text">
+                            Choose one option so we can route your message to the right team.
+                        </p>
+                    </fieldset>
+
+
+                    <div class="form-row">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message"
+                          placeholder="How can we help"></textarea>
+
+                    </div>
+
+
+                    <div class="form-row checkbox-row">
+                        <label for="newsletter">
+                            <input id="newsletter" name="newsletter" type="checkbox" />
+                            Subscribe our monthly newsletter
+                        </label>
+                    </div>
+
+
+                    <div class="form-row">
+                        <button type="submit" class="btn-primary"
+                          aria-label="Submit message to Micheal Rafting Enterprise">
+                            Send Message Securely
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
 
 
         <section class="team" aria-labelledby="team-title">
@@ -96,87 +161,23 @@
                 </figure>
             </div>
         </section>
-
-        <hr class="section-sep" />
-
-
-        <section class="contact-form" aria-labelledby="contact-form-title">
-            <h2 id="contact-form-title">Send Us a Message</h2>
-            <p>Have a question or suggestion? We'd love to hear from you.</p>
-
-            <form action="#" method="post" class="contact-form__form" novalidate>
-
-                <div class="form-row">
-                    <label for="name">Full Name</label>
-                    <input id="name" name="name" type="text" autocomplete="name" required />
-                </div>
-
-
-                <div class="form-row">
-                    <label for="email">Email Address</label>
-                    <input id="email" name="email" type="email" autocomplete="email" required />
-                </div>
-
-
-                <fieldset class="form-row" aria-describedby="purpose-help">
-                    <legend>Purpose of Message</legend>
-
-                    <div class="radio-group">
-                        <input type="radio" id="purpose-general" name="purpose" value="general"
-                          required>
-                        <label class="radio" for="purpose-general">General Inquiry</label>
-
-                        <input type="radio" id="purpose-reservation" name="purpose"
-                          value="reservation">
-                        <label class="radio" for="purpose-reservation">Reservation Question</label>
-
-                        <input type="radio" id="purpose-website" name="purpose" value="website">
-                        <label class="radio" for="purpose-website">Website Suggestion</label>
-                    </div>
-
-                    <p id="purpose-help" class="help-text">
-                        Choose one option so we can route your message to the right team.
-                    </p>
-                </fieldset>
-
-
-                <div class="form-row">
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="6" required
-                      placeholder="How can we help?"></textarea>
-                </div>
-
-
-                <div class="form-row checkbox-row">
-                    <label for="newsletter">
-                        <input id="newsletter" name="newsletter" type="checkbox" />
-                        Please subscribe me to the monthly newsletter
-                    </label>
-                </div>
-
-
-                <div class="form-row">
-                    <button type="submit" class="btn-primary"
-                      aria-label="Submit message to Micheal Rafting Enterprise">
-                        Send Message Securely
-                    </button>
-                </div>
-            </form>
-        </section>
     </main>
 
 
     <footer>
         <p>© 2026 | Micheal Rafting Enterprise | Micheal Onyemelonu | Nigeria</p>
         <nav class="socialmedia" aria-label="Social media links">
-            <a href="https://facebook.com" aria-label="This is the link to our Facebook">
-                <img src="images/facebook_3488287.png" alt="This is the link to our Facebook" />
+            <a href="https://facebook.com" aria-label="Facebook">
+                <img src="images/facebook_3488287.png"
+                  alt="This is the Facebook icon which helps clients to indentify where to click if they want to reach via Facebook" />
             </a>
-            <a href="https://linkedin.com" aria-label="This is the link to our LinkedIn">
-                <img src="images/linkedin_779096.png" alt="This is the link to our LinkedIn" />
+            <a href="https://linkedin.com" aria-label="LinkedIn">
+                <img src="images/linkedin_779096.png"
+                  alt="This is the Linkedin icon which helps clients to indentify where to click if they want to reach via Linkedin" />
             </a>
-            <a href="https://instagram.com" aria-label="This is our Instagram link">
-                <img src="images/social_15466200.png" alt="This is our Instagram link" />
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src="images/instagram_icon.png"
+                  alt="This is the Instagram icon which helps clients to indentify where to click if they want to reach via instagram" />
             </a>
         </nav>
     </footer>

@@ -36,6 +36,7 @@ header {
     align-items: center;
     padding-bottom: 0%;
     background-color: var(--primary-color);
+    border-radius: 6px;
 
 }
 
@@ -175,6 +176,7 @@ footer {
     align-items: center;
     padding-bottom: 0%;
     background-color: var(--primary-color);
+    border-radius: 6px;
 }
 
 footer .socialmedia img {
@@ -217,4 +219,147 @@ button {
 button:hover {
     background-color: var(--border-color);
     cursor: pointer;
+}
+
+/* This is the end of the index.html section */
+
+/* This is the beginning of the trips.html section */
+
+.contact-us {
+    text-align: center;
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+
+.trip-descriptions h2 {
+    text-align: center;
+}
+
+.trip-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: 1px solid var(--border-color);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip-card {
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.trip-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.trip-card h3 {
+    margin: 0.5rem 0;
+}
+
+/* all about the trip-table design */
+
+.trip-table {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+}
+
+.trip-table h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.trip-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.trip-table th {
+    background-color: var(--border-color);
+    color: var(--text-color);
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.trip-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.trip-table tbody tr:hover {
+    background-color: #ffeccc;
+    transition: background-color 0.2s ease;
+}
+
+/* this is the end of trip.html design */
+
+/* this is trhe start and begining of conatct.html desisn */
+
+.locate-us {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--border-color);
+    gap: 2rem;
+    margin: 2rem 0;
+    border-radius: 6px;
+
+}
+
+.contact-form {
+    max-width: 1000px;
+
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.radio {
+    border-color: green;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 2rem;
+    margin: 2rem 0;
+
+}
+
+.team {
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+.team-card img {
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    width: 100%;
+}
+
+fieldset {
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
 }
